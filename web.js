@@ -1,11 +1,11 @@
 // web.js
-const { createServer } = require('http');
-const { parse } = require('url');
-const next = require('next');
+const { createServer } = require("http");
+const { parse } = require("url");
+const next = require("next");
 
-const dev = false;
-const port = 3000;
-const app = next({ dev });
+const dev = false; // 배포 모드
+const port = process.env.PORT || 8001; // 카페24에서 자동 할당되는 포트 사용
+const app = next({ dev, dir: "." });
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
