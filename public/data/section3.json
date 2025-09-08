@@ -1,0 +1,13 @@
+{
+    "공지사항":[
+        {"코드번호":"notice-01","글제목":"Aliquam debitis eos facilis", "공지글":"Aliquam debitis eos facilis exercitationem ducimus? Deserunt nesciunt hic harum quo, voluptatem facere culpa, ea laboriosam ipsum quisquam commodi inventore cumque adipisci, assumenda explicabo omnis eius rem dolor aspernatur voluptatibus!","날짜": "2025-01-10"},
+        {"코드번호":"notice-02","글제목":"Rerum veniam nobis inventore", "공지글":"Rerum veniam nobis inventore, aperiam ipsam molestiae animi totam fugiat id earum cupiditate beatae? Ipsam tempora facere explicabo blanditiis laboriosam nisi, ea, pariatur ex nostrum nemo similique asperiores odit fugit?","날짜": "2025-01-18"},
+        {"코드번호":"notice-03","글제목":"Quis doloribus alias veniam", "공지글":"Quis doloribus alias veniam nobis mollitia laudantium sint doloremque illum praesentium ratione reprehenderit ipsum nisi in amet distinctio magnam perspiciatis non odio illo quisquam nihil, dolorem quae voluptatum! Reprehenderit, harum?","날짜": "2025-01-15"},
+        {"코드번호":"notice-04","글제목":"Possimus perferendis necessitatibus", "공지글":"Possimus perferendis necessitatibus magni sit cupiditate nihil enim quisquam ipsum facilis officia in corporis repudiandae culpa, autem exercitationem doloremque suscipit, iusto odit molestiae, quaerat ullam quam illo. Laudantium, accusamus voluptatem.","날짜": "2025-01-11"}
+    ],
+    "갤러리":[
+        {"코드번호":"gallery-01","이미지":"gallery1.jpg","코멘트": "gallery1"},
+        {"코드번호":"gallery-02","이미지":"gallery2.jpg","코멘트": "gallery2"},
+        {"코드번호":"gallery-03","이미지":"gallery3.jpg","코멘트": "gallery3"}
+    ]
+}

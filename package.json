@@ -1,0 +1,30 @@
+{
+  "name": "next_pureunmaeul",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=18 <23"
+  },  
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "postinstall": "next build"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.9.0",
+    "axios": "^1.11.0",
+    "next": "13.5.11",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-redux": "^9.2.0",
+    "sass": "^1.92.0",
+    "sass-loader": "^16.0.5",
+    "serve": "^14.2.5"
+  },
+  "devDependencies": {
+    "cross-env": "^10.0.0",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.11"
+  }
+}
