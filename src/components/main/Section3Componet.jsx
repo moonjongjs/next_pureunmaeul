@@ -105,9 +105,9 @@ export default function Section3Componet() {
                     {
                        state.갤러리.map((item)=>
                             <li key={item.코드번호} data-key={item.코드번호}>
-                                <Link href="#" title={item.코멘트}>
+                                <a href="#" onClick={(e)=>onClickLink(e)}  title={item.코멘트}>
                                     <img src={`/images/${item.이미지}`} alt={item.코멘트}/>
-                                </Link>
+                                </a>
                             </li>
                         )                       
                     }
