@@ -6,3 +6,10 @@ npm install 불필요 → Vercel 서버에서 자동 설치 & 빌드.
 도메인 제공 → 프로젝트명.vercel.app
 커스텀 도메인 연결도 가능 (추후 무료 HTTPS 포함).
 
+git add .
+git commit -m "업데이트"
+git push origin master
+
+git add .
+git commit -m "update"
+git push origin master
