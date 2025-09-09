@@ -98,12 +98,18 @@ git branch -M main
 git checkout -b next
 
 git add .
-git commit -m "Active Branches Commit using our Git connections."
-git push origin test-preview
+git commit -m "Active Branches => Commit using our Git connections."
+git push origin next
 ```
 
+# 브랜치 삭제
+git branch -d next + git push origin --delete next
 
-
+```
+- 하면 Vercel Preview도 자동으로 정리됩니다.
+  팀 작업 시 다른 개발자도 Preview URL을 통해 
+  동일하게 확인할 수 있습니다.
+```
 
 # 6. 원격 저장소(Remote) 관리
 # 원격 오리진 이름변경  
