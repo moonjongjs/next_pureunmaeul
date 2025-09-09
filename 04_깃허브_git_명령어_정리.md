@@ -93,6 +93,13 @@ git checkout -b feature/login : 새로운 브랜치 생성 후 이동
 git merge feature/login : feature/login 브랜치를 현재 브랜치에 병합
 git branch -M master
 git branch -M main
+
+# 브랜치 추가
+git checkout -b next
+
+git add .
+git commit -m "Active Branches Commit using our Git connections."
+git push origin test-preview
 ```
 
 
