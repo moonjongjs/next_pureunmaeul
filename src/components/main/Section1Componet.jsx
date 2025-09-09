@@ -1,5 +1,6 @@
 'use client';
 import useCustomHook from '@/custom/useCustomHook';
+import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 
 export default function Section1Componet() {
@@ -83,9 +84,9 @@ export default function Section1Componet() {
                         if(item.타이틀!==''){
                             return(
                                 <li key={item.코드번호}  data-key={item.코드번호}>
-                                    <lINK href="#" title={item.타이틀}>
+                                    <Link href="#" title={item.타이틀}>
                                         <img src={`/images/${item.이미지}`} alt={item.타이틀} />
-                                    </lINK>
+                                    </Link>
                                 </li>
                             )
                         }
