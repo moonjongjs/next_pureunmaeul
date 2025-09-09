@@ -110,6 +110,68 @@ git branch -d next + git push origin --delete next
   팀 작업 시 다른 개발자도 Preview URL을 통해 
   동일하게 확인할 수 있습니다.
 ```
+master 브랜치 → 섹션2 이미지 = 산 전경
+next 브랜치 → 섹션2 이미지 = 작은 새 썸네일 (수정됨)
+최종적으로 master에 next의 수정 사항을 반영해야 함 = 브랜치 병합 (merge)
+
+병합 절차 (GitHub 기준)
+1) GitHub Pull Request (권장)
+GitHub에서 next 브랜치 선택
+Compare & pull request 버튼 클릭
+base = master, compare = next 설정
+변경된 파일(diff) 확인 (섹션2 이미지 부분만 바뀌었는지 확인)
+Pull Request 생성 후 → Merge pull request 클릭
+병합이 완료되면 → Vercel이 자동으로 master 브랜치를 배포 (Production 사이트에 적용됨)
+
+2) Git 로컬에서 병합
+# master 브랜치로 이동
+```BASH
+git checkout master
+```
+
+# 원격 최신 코드 가져오기
+```BASH
+git pull origin master
+```
+
+# next 브랜치를 master로 병합
+```BASH
+git merge next
+```
+
+# 병합된 결과를 GitHub에 올리기
+```BASH
+git push origin master
+```
+
+
+만약 master와 next에 동일한 코드 줄이 
+서로 다르게 수정된 경우 → 충돌(conflict) 발생.
+
+이때는 VSCode 같은 에디터에서 
+직접 "산 전경 vs 작은 새" 선택/수정 후 저장
+→ 다시 
+
+```BASH
+git add .  
+git commit 
+git push origin master 
+```
+
+하면 돼요.
+
+병합 후 확인
+GitHub → master에 변경사항 반영됐는지 확인
+Vercel → Production 배포 로그 확인
+최종 사이트(https://next-pureunmaeul.vercel.app)에서 
+섹션2가 "작은 새 썸네일"로 적용됐는지 체크
+추천: GitHub Pull Request 방식이 
+가장 안전하고 Vercel과 자동 연동이 잘 돼요.
+
+
+
+
+
 
 # 6. 원격 저장소(Remote) 관리
 # 원격 오리진 이름변경  
