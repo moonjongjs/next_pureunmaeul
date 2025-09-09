@@ -13,3 +13,8 @@ git push origin master
 git add .
 git commit -m "update"
 git push origin master
+
+
+git add .
+git commit -m "fix: fetch & image 경로 절대경로로 수정"
+git push origin master
