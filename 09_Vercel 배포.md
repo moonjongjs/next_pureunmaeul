@@ -18,3 +18,31 @@ git push origin master
 git add .
 git commit -m "fix: fetch & image 경로 절대경로로 수정"
 git push origin master
+
+
+# remote 이름변경  git remote rename github origin
+# remote 이름삭제  git remote remove cafe24
+git remote remove cafe24
+
+$ git remote -v
+cafe24  moonjong22@next2.cafe24app.com:moonjong22_next2 (fetch)
+cafe24  moonjong22@next2.cafe24app.com:moonjong22_next2 (push)
+github  https://github.com/moonjongjs/next_pureunmaeul.git (fetch)
+github  https://github.com/moonjongjs/next_pureunmaeul.git (push)
+
+user@DESKTOP-RFHO592 MINGW64 ~/Downloads/120강_NextJS_프로젝트_생성_설치_실행_구현/03_NextJS_제작_구현_MVC_패턴디자인_네비게이션_캐러셀슬라이드_탭메뉴_공지사항_갤러리_구현완료_카페24_빌드_배포 (master)
+
+$ git remote rename github origin
+Renaming remote references: 100% (1/1), done.
+
+git remote -v
+
+
+
+
+
+git add .
+git commit -m "fix: 이미지 경로 및 fetch 절대경로 수정"
+
+
+
