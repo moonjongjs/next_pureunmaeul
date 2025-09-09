@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import { useDispatch } from 'react-redux';
 import axios from 'axios';
 import { setModalAction, setModalContentsAction } from '@/app/store/modal';
+import Link from 'next/link';
 
 export default function Section3Componet() {
 
@@ -104,9 +105,9 @@ export default function Section3Componet() {
                     {
                        state.갤러리.map((item)=>
                             <li key={item.코드번호} data-key={item.코드번호}>
-                                <a href="!#" title={item.코멘트}>
+                                <Link href="#" title={item.코멘트}>
                                     <img src={`/images/${item.이미지}`} alt={item.코멘트}/>
-                                </a>
+                                </Link>
                             </li>
                         )                       
                     }
