@@ -18,7 +18,7 @@ export default function HeaderComponet() {
     const router = useRouter();
 
     useEffect(()=>{
-        fetch(`${process.env.NEXT_PUBLIC_BASE_PATH}/data/header.json`, {method: 'GET'})       
+        fetch(`/data/header.json`, {method: 'GET'})       
         .then((res)=>res.json())
         .then((data)=>{
             setState({

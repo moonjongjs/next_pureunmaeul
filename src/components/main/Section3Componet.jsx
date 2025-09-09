@@ -15,7 +15,7 @@ export default function Section3Componet() {
 
     useEffect(()=>{
         axios({
-            url:`${process.env.NEXT_PUBLIC_BASE_PATH}/data/section3.json`,
+            url:`/data/section3.json`,
             method: 'GET'
         })
         .then((res)=>{
@@ -105,7 +105,7 @@ export default function Section3Componet() {
                        state.갤러리.map((item)=>
                             <li key={item.코드번호} data-key={item.코드번호}>
                                 <a href="!#" title={item.코멘트}>
-                                    <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/${item.이미지}`} alt={item.코멘트}/>
+                                    <img src={`/images/${item.이미지}`} alt={item.코멘트}/>
                                 </a>
                             </li>
                         )                       

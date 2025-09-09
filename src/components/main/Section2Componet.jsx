@@ -12,7 +12,7 @@ export default function Section2Componet() {
                 <a href="#"  onClick={(e)=>onClickLink(e)}>
                     <div className="content">                    
                         <div className="col1">
-                            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/banner.jpg`} alt="banner"/>
+                            <img src={`/images/banner.jpg`} alt="banner"/>
                         </div>
                         <div className="col2">
                             <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>                            

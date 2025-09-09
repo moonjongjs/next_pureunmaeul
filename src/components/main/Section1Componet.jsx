@@ -13,7 +13,7 @@ export default function Section1Componet() {
     });
 
     useEffect(()=>{
-        fetch(`${process.env.NEXT_PUBLIC_BASE_PATH}/data/section1.json`, {method: 'GET'}) 
+        fetch(`/data/section1.json`, {method: 'GET'}) 
         .then((res)=>res.json())
         .then((data)=>{
             setState({
@@ -66,7 +66,7 @@ export default function Section1Componet() {
                         state.슬라이드.map((item)=> 
                             <li key={item.코드번호} data-key={item.코드번호}  className={`slide ${item.클래스} last`}>
                                 <a href="!#" onClick={(e)=>onClickLink(e)} title={item.코멘트}>
-                                    <img src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/${item.이미지}`} alt={item.코멘트}/>
+                                    <img src={`/images/${item.이미지}`} alt={item.코멘트}/>
                                     <h2>{item.코멘트}</h2>
                                 </a>
                             </li>
@@ -84,7 +84,7 @@ export default function Section1Componet() {
                             return(
                                 <li key={item.코드번호}  data-key={item.코드번호}>
                                     <a href="!#" title={item.타이틀}>
-                                        <img src={`./images/${item.이미지}`} alt={item.타이틀} />
+                                        <img src={`/images/${item.이미지}`} alt={item.타이틀} />
                                     </a>
                                 </li>
                             )
