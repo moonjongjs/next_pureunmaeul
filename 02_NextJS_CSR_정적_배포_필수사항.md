@@ -1,4 +1,4 @@
-# 02_NextJS_배포_필수사항
+# 02_NextJS_정적_배포_필수사항
 
 1. package.json => export 추가
 

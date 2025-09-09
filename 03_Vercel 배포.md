@@ -22,6 +22,11 @@ git push origin master
 
 # remote 이름변경  git remote rename github origin
 # remote 이름삭제  git remote remove cafe24
+# remote 모두삭제  git remote remove origin
+# remote 목록확인  git remote -v
+# remote 이름추가  git remote add origin https://github.com/moonjongjs/next_pureunmaeul.git
+
+
 git remote remove cafe24
 
 $ git remote -v
@@ -36,10 +41,6 @@ $ git remote rename github origin
 Renaming remote references: 100% (1/1), done.
 
 git remote -v
-
-
-
-
 
 git add .
 git commit -m "fix: 이미지 경로 및 fetch 절대경로 수정"

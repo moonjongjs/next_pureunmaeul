@@ -83,9 +83,9 @@ export default function Section1Componet() {
                         if(item.타이틀!==''){
                             return(
                                 <li key={item.코드번호}  data-key={item.코드번호}>
-                                    <a href="!#" title={item.타이틀}>
+                                    <lINK href="#" title={item.타이틀}>
                                         <img src={`/images/${item.이미지}`} alt={item.타이틀} />
-                                    </a>
+                                    </lINK>
                                 </li>
                             )
                         }
